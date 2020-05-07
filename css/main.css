@@ -5,3 +5,60 @@
 .btn-yellow {
     background-color:rgba(255, 192, 58, 1);
 }
+
+img {
+    max-width:100%;
+}
+
+.center-div {
+    margin:auto;
+}
+
+.banner-div {
+    overflow:hidden;
+    height:500px;
+}
+
+#hiw div div.row ul>li:first-child {
+    width:auto;
+    height:250px;
+    overflow:hidden;
+}
+
+.ask, .answer, .trending {
+    text-transform:uppercase;
+    text-align:center;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size:100% auto;
+    color:white;
+}
+
+.ask {
+    background-image: url('../img/ask.jpg')
+}
+.answer {
+    background-image: url('../img/answer.jpg')
+}
+.trending {
+    background-image: url('../img/trending.jpg')
+}
+
+.email {
+    width:50%;
+}
+
+.row.p-top-btm {
+    padding:2em 0;
+}
+
+@media only screen and (max-width: 768px) {
+  
+    .banner-div {
+        overflow:hidden;
+        height:180px;
+    }
+    .email {
+        width:90%;
+    }
+  }
