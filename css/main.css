@@ -1,5 +1,92 @@
+html {
+    scroll-behavior: smooth;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+a, a:hover, a:active {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    color:#555;
+}
+
+
+h1, h2, h3, h4 {
+    font-family:'Oswald';
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.overlay-menu {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    top: 80px;
+    left: 0;
+    background-color: rgb(255,255,255);
+    background-color: rgba(255,255,255, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align:center;
+}
+
+.top-menu-bar {
+    width:100%;
+    height:80px;
+    line-height:80px;
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:3;
+    background:#fff;
+}
+
+.menu-container {
+    width:100%;
+    position:relative;
+}
+
+.menu-bar {
+    display: inline-block;
+    cursor: pointer;
+    position:absolute;
+    right:15px;
+    top:20px;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #555;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .overlay-menu-content ul li {
+      width:100%;
+      padding:10px;
+      line-height:1.2em;
+      font-size:1.2em;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
 .clr-yellow {
     color:#FFC03A;
+}
+
+.bg-clr-grey {
+    background-color:#f3f3f3;
 }
 
 .btn-yellow {
@@ -12,6 +99,7 @@ img {
 
 .center-div {
     margin:auto;
+    padding:20px;
 }
 
 .banner-div {
@@ -23,6 +111,13 @@ img {
     width:auto;
     height:250px;
     overflow:hidden;
+    font-weight: 700;
+}
+
+#hiw div div.row ul>li:nth-child(2) {
+    height:120px;
+    padding:20px 10px;
+    background-color:#f3f3f3;
 }
 
 .ask, .answer, .trending {
@@ -48,6 +143,12 @@ img {
     width:50%;
 }
 
+.row.contact {
+    height:auto;
+    overflow:hidden;
+}
+
+
 .row.p-top-btm {
     padding:2em 0;
 }
@@ -60,5 +161,18 @@ img {
     }
     .email {
         width:90%;
+    }
+
+    .container-fluid {
+        margin-top:100px;
+    }
+
+    #logo {
+        vertical-align: middle;
+        height:50px;
+    }
+
+    .top-menu-bar {
+        display:block;
     }
   }

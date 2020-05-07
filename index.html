@@ -16,18 +16,39 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div id="mobile-nav" class="overlay-menu">
+        <div class="overlay-menu-content">
+            <ul class="list-unstyled">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#hiw-header">How It Works</a></li>
+                <li><a href="#new">What's New</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="top-menu-bar">
+        <div class="menu-container">
+            <div class="menu-bar">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
         
-        <div class="row">
+            <img src="img/logo.webp" id="logo" />
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row  d-none d-md-block">
             <div class="col-12 text-center">
-                <img src="img/logo.webp" />
+                <img src="img/logo.webp" id="logo" />
             </div>
         </div>
         <div class="row">
-            <div class="col-12 text-center">
+            <div class="col-12 text-center d-none d-md-block">
                 <ul class="list-inline">
                     <li class="list-inline-item"><a href="#about">About Us</a></li>
-                    <li class="list-inline-item"><a href="#hiw">How It Works</a></li>
+                    <li class="list-inline-item"><a href="#hiw-header">How It Works</a></li>
                     <li class="list-inline-item"><a href="#new">What's New</a></li>
                     <li class="list-inline-item"><a href="#team">Our Team</a></li>
                     <li class="list-inline-item"><a href="#contact">Contact Us</a></li>
@@ -47,21 +68,21 @@
             </div>
         </div>
         <div class="row p-top-btm" id="about">
-            <div class="col-md-5 offset-md-1 text-center d-flex align-content-center">
+            <div class="col-md-5 offset-md-1 text-center d-flex align-content-center bg-clr-grey p-0">
                 <div class="center-div">
-                    <h2 class="clr-yellow">ABOUT US</h2>
+                    <h2 class="clr-yellow">About Us</h2>
                     <p>Our mission: Make inquiry fun again.</p>
                     <p>Our vision: To empower all to learn in a fun, organic and community-driven way.</p>
                     <a class="btn btn-default btn-yellow" href="#contact">Learn More</a>
                 </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 p-0">
                 <img src="img/think.jpg" alt="think outside the box" />
             </div>
         </div>
         <div class="row">
             <div class="col-12 text-center">
-                <h2 class="clr-yellow">HOW IT WORKS</h2>
+                <h1 class="clr-yellow" id="hiw-header">How it Works</h1>
             </div>
         </div>
         <div class="row p-top-btm" id="hiw">
@@ -90,19 +111,19 @@
         </div>
 
         <div class="row p-top-btm" id="new">
-            <div class="col-md-3 offset-md-2 text-center d-flex align-content-center">
+            <div class="col-md-4 offset-md-1 text-center d-flex align-content-center bg-clr-grey p-0">
                 <div class="center-div">
                     <h2 class="clr-yellow">STARTUP WEEKEND SINGAPORE 2020</h2>
                     <p>We are stoked to win 3rd place in Startup Weekend Singapore! We are also grateful to have our idea validated by the distinguished judges and mentors. Since then we have rebranded Howl into a fun and cheekier cousin, Whyena!</p>
 
                 </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-6 p-0">
                 <img src="img/startup-weekend.gif" />
             </div>
         </div>
         <div class="row p-top-btm" id="pitch">            
-            <div class="col-md-8 offset-md-2">
+            <div class="col-md-8 offset-md-2  p-0">
                 <iframe width="100%" height="400" src="https://www.youtube.com/embed/--A_W6c3Acw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
@@ -114,7 +135,7 @@
         </div>
         <div class="row text-center" id="team">            
             <div class="col-md-12">
-               <h3 class="clr-yellow">THE WHYENA TEAM</h3> 
+               <h1 class="clr-yellow">THE WHYENA TEAM</h1> 
             </div>
         </div>
         <div class="row text-center p-top-btm" id="team-list">
@@ -147,15 +168,15 @@
                 </ul>
             </div>      
         </div>
-        <div class="row text-center p-top-btm" id="contact">            
+        <div class="row text-center p-top-btm contact" id="contact">            
             <div class="col-md-6 p-0">
               <img src="img/do.jpg" />
             </div>
-            <div class="col-md-6 p-0 d-flex align-content-center">
+            <div class="col-md-6 p-0 d-flex align-content-center bg-clr-grey">
                 <div class="center-div">
                     <ul class="list-unstyled">
-                        <li><h3 class="clr-yellow">Get in Touch</h3></li>
-                        <li><p>Singapore</p></li>
+                        <li><h1 class="clr-yellow">Get in Touch</h1></li>
+                        <li>Singapore</li>
                         <li><a href="mailto:hello@whyena.com">hello@whyena.com</a></li>
                         <li><a href="tel:+6591766832">+65 9176 6832</a></li>
                     </ul>
@@ -195,6 +216,7 @@
 
     </div>
     
-  <script src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="   crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
