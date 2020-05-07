@@ -9,6 +9,7 @@ $(document).ready(function(){
     });
 
     $('.overlay-menu-content ul li').on('click', 'a', function(){
+        $('.menu-bar').toggleClass('change');
         $('#mobile-nav').height('0');
     });
     
