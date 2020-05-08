@@ -139,9 +139,17 @@ img {
     background-image: url('../img/trending.jpg')
 }
 
-.email {
-    width:50%;
+.email, #mc-embedded-subscribe {
+    width:40%;
 }
+
+.profile {
+    height:200px;
+    width:200px;
+    border-radius:100px;
+    margin-bottom:20px;
+}
+
 
 
 
@@ -170,5 +178,15 @@ img {
 
     .top-menu-bar {
         display:block;
+    }
+
+    #hiw div div.row ul>li:nth-child(2) {
+        height:auto;
+        
+    }
+
+    #hiw div div.row ul>li:first-child {
+        height:auto;
+        
     }
   }
