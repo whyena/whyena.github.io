@@ -96,9 +96,7 @@ $(document).ready(function(){
         window.location = 'mailto:hello@whyena.com?subject=' + $('input[name ="subject"]').val() +'&body=' +  $('textarea[name ="message"]').val();
     });
 
-    $('.carousel').carousel({
-        interval: 5000
-      });
+    $('.carousel').carousel();
 
     $('.this-year').text(new Date().getFullYear());
     

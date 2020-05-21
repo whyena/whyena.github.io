@@ -412,4 +412,8 @@ h1, h2, h3, h4 {
     .carousel-control-next {
         margin-right:0rem;
     }
+
+    .huge {
+        font-size:3rem;
+    }
   }
