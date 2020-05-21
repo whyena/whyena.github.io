@@ -1,4 +1,4 @@
-html {
+html, body {
     scroll-behavior: smooth;
     font-family: 'Biryani',  Helvetica, Arial,sans-serif;
 }
@@ -10,7 +10,7 @@ a, a:hover, a:active {
 
 
 h1, h2, h3, h4 {
-    font-family:'Rubik',  Helvetica, Arial,sans-serif;
+    font-family:'Biryani',  Helvetica, Arial,sans-serif;
     font-weight: 700;
 }
 
@@ -26,11 +26,17 @@ h1, h2, h3, h4 {
 .row.p-top-7 {
     padding-top:7rem;
 }
+.row.p-top-4 {
+    padding-top:4rem;
+}
 
 .row.p-btm-7 {
     padding-bottom:7rem;
 }
 
+.p-all-2 {
+    padding:2rem;
+}
 
 .huge {
     font-size:4rem;
@@ -50,6 +56,33 @@ h1, h2, h3, h4 {
 
 .max-width-100 {
     max-width:100%;
+}
+
+.floating-div {
+    width:100%;
+    height:110%;
+    z-index:999;
+    -webkit-box-shadow: 18px 29px 40px -10px rgba(0,0,0,0.23);
+    -moz-box-shadow: 18px 29px 40px -10px rgba(0,0,0,0.23);
+}
+
+
+
+.floating-div ul li input, .floating-div ul li textarea{
+    border:1px solid #fff;
+    width:100%;
+    margin:0.5rem 0;
+    padding:1rem;
+    background:none;
+    color:#fff;
+}
+
+.floating-div ul li input::placeholder, .floating-div ul li textarea::placeholder {
+    color:#fff;
+}
+
+.message {
+    height:10rem;
 }
 
 .overlay-menu {
@@ -118,6 +151,13 @@ h1, h2, h3, h4 {
     transform: rotate(45deg) translate(-8px, -8px);
   }
 
+  .header-line {
+      width:5rem;
+      height:0.5rem;
+      background:#000;
+      margin:0.5rem 0;
+  }
+
   .top-nav {
     height:7rem;
     padding:1.5rem 0;
@@ -135,12 +175,31 @@ h1, h2, h3, h4 {
     text-transform:uppercase;
   }
 
+  .menu-nav li {
+    margin:0 1rem;
+  }
+
+  .menu-nav > li > a.active {
+      font-weight:700;
+      color:#e64936;
+
+  }
+
   #logo {
     height:4rem;
   }
 
 .clr-yellow {
     color:#FFC03A;
+}
+
+.bg-clr-grd-yellow {
+    background: rgb(255,192,58);
+    background: linear-gradient(339deg, rgba(255,192,58,1) 0%, rgba(254,190,16,1) 29%, rgba(255,199,44,1) 73%, rgba(254,190,16,1) 100%);
+}
+
+.btn-whyena {    
+    padding:0.6rem 1.5rem;
 }
 
 .bg-clr-grey {
@@ -156,11 +215,20 @@ h1, h2, h3, h4 {
     background-color:#FFC03A;
 }
 
-.btn-yellow {    
-    padding:1rem 2rem;
+.bg-clr-red {
+    background-color:#e64936;
     color:#fff;
 }
 
+.bg-clr-white{
+    background:#fff;
+    color:#000;
+}
+
+.bg-clr-blue {
+    background-color:#423685;
+    color:#fff
+}
 
 .center-div {
     margin:auto;
@@ -191,6 +259,33 @@ h1, h2, h3, h4 {
 }
 #hiw div div.row ul>li:nth-child(2) h2 {
     font-weight:300;
+}
+
+#how-it-works{
+    height:30rem;
+}
+
+#how-it-works img{
+    z-index:9999;
+    height:40rem;
+    width:auto;
+    margin-top:-5rem;
+}
+
+.overflow-show {
+    overflow: visible;
+}
+
+.carousel-control-prev {
+    margin-left:-7.5rem;
+}
+
+.carousel-control-next {
+    margin-right:-7.5rem;
+}
+
+.height-100 {
+    height:100%;
 }
 
 .support, .connect, .productive, .fun {
@@ -227,10 +322,15 @@ h1, h2, h3, h4 {
 }
 
 
-
+.border-black {
+    border:4px solid black;
+}
 
 .border-red {
     border:4px solid red;
+}
+#social a, #social a:hover, #social a:active {
+    color:#fff;
 }
 
 @media only screen and (max-width: 768px) {
@@ -284,5 +384,32 @@ h1, h2, h3, h4 {
 
     .row.p-top-7 {
         padding-top:80px;
+    }
+
+    .floating-div {
+        height:auto;
+        margin-bottom:3rem;
+    }
+
+    #how-it-works{
+        height:auto;
+    }
+
+    #how-it-works img{
+        margin:2rem auto;
+        
+    }
+
+    .height-30 {
+        height:30rem;
+    }
+
+   
+    .carousel-control-prev {
+        margin-left:0rem;
+    }
+    
+    .carousel-control-next {
+        margin-right:0rem;
     }
   }

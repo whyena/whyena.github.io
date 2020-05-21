@@ -11,6 +11,7 @@
 
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.9/typicons.min.css" rel="stylesheet" >
   <link href="css/main.css" rel="stylesheet" >
 
 </head>
@@ -19,11 +20,11 @@
     <div id="mobile-nav" class="overlay-menu">
         <div class="overlay-menu-content">
             <ul class="list-unstyled">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
+                <li><a href="#home">Home</a></li>                
                 <li><a href="#hiw-header">How It Works</a></li>
                 <li><a href="#new">News</a></li>
                 <li><a href="#team">Our Team</a></li>
+                <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
         </div>
@@ -36,42 +37,89 @@
                 <div class="bar3"></div>
             </div>
         
-            <img src="img/logo.png" id="logo" />
+            <a href="#home"><img src="img/logo.png" id="logo" /></a>
         </div>
     </div>
-    <div class="container-fluid p-0"  id="home">
+    <div class="container-fluid p-0 whyena-section"  id="home">
         <div class="top-nav">
             <div class="row m-0 p-side-6">
                 <div class="col-3 text-center d-none d-md-block">
-                    <img src="img/logo.png" id="logo" />
+                    <a href="#home"><img src="img/logo.png" id="logo" /></a>
                 </div>
                 <div class="col-8 d-none d-md-block">
                     <ul class="list-inline menu-nav text-right">
                         <li class="list-inline-item"><a href="#home">Home</a></li>
-                        <li class="list-inline-item"><a href="#about">About Us</a></li>
+                       
                         <li class="list-inline-item"><a href="#hiw-header">How It Works</a></li>
                         <li class="list-inline-item"><a href="#new">News</a></li>
                         <li class="list-inline-item"><a href="#team">Our Team</a></li>
+                        <li class="list-inline-item"><a href="#about">About Us</a></li>
                         <li class="list-inline-item"><a href="#contact">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="row m-0 p-top-7 p-side-6">
+        <div class="row m-0 p-top-7 p-btm-7 p-side-6">
             <div class="col-md-6">
                 <img class="max-width-100" src="img/top-img.jpg" />
             </div>
-            <div class="col-md-6 m-top-2">
+            <div class="col-md-6 m-top-2 p-side-6">
                 <h1 class="huge">Redefining<br />Learning</h1>
                 <p class="small">Fun. Authentic. Organic.
                 <br />All in one platform.</p>
                 <br />
-                <a class="btn-yellow bg-clr-yellow" href="#contact">Learn More</a>
+                <a class="btn-whyena bg-clr-yellow" href="#contact">Learn More</a>
+            </div>
+        </div>
+        <div class="row m-0 p-top-7 p-btm-7 bg-clr-yellow whyena-section"   id="hiw-header">
+            <div class="offset-md-1 col-md-10 bg-clr-red p-0">
+                <div id="how-it-works" class="carousel slide height-100">
+                    <div class="carousel-inner overflow-show height-100">
+                      <div class="carousel-item active height-100">
+                        <div class="row m-0 height-100">
+                            <div class="col-md-6 p-0 text-center">
+                                <img src="img/hiw1.png" />
+                            </div>
+                            <div class="col-md-6 p-0 height-100 d-flex height-30">
+                                <div class="align-self-center p-side-6">
+                                    <h1 class="medium">Q&A</h1>
+                                    <p class="x-small">Need help with homework? Or, want some advice? Our community will help you with your question! <br /><br />Also, share your knowledge and wisdom with your peers. Giving can be as simple as sharing.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                      </div>
+                      <div class="carousel-item height-100">
+                        <div class="row p-0 height-100 m-0">
+                            <div class="col-md-6  p-0 text-center">
+                                <img src="img/hiw2.png" />
+                            </div>
+                            <div class="col-md-6 p-0 height-100 d-flex height-30">
+                                <div class="align-self-center p-side-6">
+                                    <h1 class="medium">What’s Trending?</h1>
+                                    <p class="x-small">Find out what others are curious about and learn from their questions! Time spent on social has never been more productive.</p>
+                                    <br />
+                                    <h1 class="medium">Get Rewarded</h1>
+                                    <p class="x-small">Top the leaderboard! Earn points and build a portfolio to showcase your knowledge and altruism. All while doing good and having fun!</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#how-it-works" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#how-it-works" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
             </div>
         </div>
         <div class="row m-0 p-top-7">
             <div class="col-12">
-                <h1 class="medium" id="hiw-header">Designed for Learners</h1>
+                <h1 class="medium">Designed for Learners</h1>
             </div>
         </div>
         <div class="row m-0" id="hiw">
@@ -104,7 +152,7 @@
                 </div>
             </div>
         </div>
-        <div class="row m-0 p-side-6 p-top-7 p-btm-7 bg-clr-dark-grey" id="new">
+        <div class="row m-0 p-side-6 p-top-7 p-btm-7 bg-clr-dark-grey whyena-section" id="new">
             <div class="col-md-6 d-flex align-content-center p-0">
                 <div class="center-div">
                     <h2 class="medium">Startup Weekend Singapore 2020</h2>
@@ -117,20 +165,7 @@
             </div>
         </div>
         
-        <div class="row m-0 p-top-7" id="about">
-            <div class="col-md-5 offset-md-1 text-center d-flex align-content-center bg-clr-grey p-0">
-                <div class="center-div">
-                    <h2 class="clr-yellow">About Us</h2>
-                    <p>Our mission: Make inquiry fun again.</p>
-                    <p>Our vision: To empower all to learn in a fun, organic and community-driven way.</p>
-                    <a class="btn btn-default btn-yellow" href="#contact">Learn More</a>
-                </div>
-            </div>
-            <div class="col-md-5 p-0">
-                <img src="img/think.jpg" alt="think outside the box" />
-            </div>
-        </div>
-        
+              
 
         
         <div class="row m-0 p-top-7" id="pitch">            
@@ -139,87 +174,102 @@
                 <img class="max-width-100" src="img/pitch.png" />
             </div>
             <div class="col-md-7 p-0">
-                <iframe width="100%" height="400"  class="border-red m-top-2" src="https://www.youtube.com/embed/--A_W6c3Acw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" height="400"  class="m-top-2" src="https://www.youtube.com/embed/--A_W6c3Acw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
- 
-        <div class="row m-0 text-center" id="team">            
-            <div class="col-md-12">
-               <h1 class="clr-yellow">THE WHYENA TEAM</h1> 
+        <div class="row m-0 bg-clr-grd-yellow p-top-7 p-btm-7 whyena-section" id="team">
+                       
+            <div class="col-md-12 p-side-6">
+                <h1 class="huge">Our Team</h1>
+                <div class="header-line"></div>
+            </div>
+           
+            
+            <div class="col-md-12 text-center m-top-2 p-side-6">
+                <div class="row m-0">
+                    <div class="col-md-3">
+                        <ul class="list-unstyled">
+                            <li><img class="profile" src="img/roy.png" /></li>
+                            <li><h4 class="small">Roy Tan</h4></li>
+                            <li><p>Head of Business Dev</p></li>
+                        </ul>
+                    </div>      
+                    <div class="col-md-3">
+                        <ul class="list-unstyled">
+                            <li><img class="profile" src="img/min.jpg" /></li>
+                            <li><h4 class="small">Min Lee</h4></li>
+                            <li><p>Head of Product</p></li>
+                        </ul>
+                    </div>      
+                    <div class="col-md-3">
+                        <ul class="list-unstyled">
+                            <li><img class="profile" src="img/ty.jpg" /></li>
+                            <li><h4 class="small">TY</h4></li>
+                            <li><p>Head of Tech</p></li>
+                        </ul>
+                    </div>      
+                    <div class="col-md-3">
+                        <ul class="list-unstyled">
+                            <li><img class="profile" src="img/tx.png" /></li>
+                            <li><h4 class="small">TX</h4></li>
+                            <li><p>Head of Development</p></li>
+                        </ul>
+                    </div>      
+                </div>      
             </div>
         </div>
-        <div class="row m-0 text-center p-top-btm" id="team-list">
+
+        <div class="row m-0 p-top-7 whyena-section" id="about">
             <div class="col-md-3">
-                <ul class="list-unstyled">
-                    <li><img class="profile" src="img/roy.png" /></li>
-                    <li><h4 class="clr-yellow">Roy Tan</h4></li>
-                    <li><p>Business Developer</p></li>
-                </ul>
-            </div>      
-            <div class="col-md-3">
-                <ul class="list-unstyled">
-                    <li><img class="profile" src="img/min.jpg" /></li>
-                    <li><h4 class="clr-yellow">Min Lee</h4></li>
-                    <li><p>Product Manager</p></li>
-                </ul>
-            </div>      
-            <div class="col-md-3">
-                <ul class="list-unstyled">
-                    <li><img class="profile" src="img/ty.jpg" /></li>
-                    <li><h4 class="clr-yellow">TY</h4></li>
-                    <li><p>Chief Technical Officer</p></li>
-                </ul>
-            </div>      
-            <div class="col-md-3">
-                <ul class="list-unstyled">
-                    <li><img class="profile" src="img/tx.png" /></li>
-                    <li><h4 class="clr-yellow">TX</h4></li>
-                    <li><p>Developer</p></li>
-                </ul>
-            </div>      
-        </div>
-        <div class="row m-0 text-center p-top-btm contact" id="contact">            
-            <div class="col-md-6 p-0">
-              <img src="img/do.jpg" />
+                <h1 class="huge">About Us</h1>
+                <img class="max-width-100" src="img/about.png" />
             </div>
-            <div class="col-md-6 p-0 d-flex align-content-center bg-clr-grey">
-                <div class="center-div">
+            <div class="col-md-6 p-all-2 text-center bg-clr-red d-flex">
+                <p class="small align-self-center">We are a team of educators and developers, who believe in the power of technology in transforming learning. <br /><br />With Whyena, learners can reclaim the autonomy of learning, be empowered to pursue their interest and rediscover the joy of learning.</p>
+            </div>
+            <div class="col-md-3">
+                <img class="max-width-100" src="img/emoji.png" />
+                <div class="bg-clr-blue p-all-2 text-center">
+                    <h2 class="medium">Our Vision</h2>
+                    <p class="small">To empower all to learn in a fun, organic and community-driven way.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row m-0 p-top-7 whyena-section" id="contact">            
+            <div class="col-md-5 offset-md-1 d-flex">
+                
+                <ul class="list-unstyled m-top-2 align-self-center">
+                    <li><h1 class="huge">Get in Touch</h1></li>
+                    <li class="small"><a href="mailto:hello@whyena.com">hello@whyena.com</a></li>
+                    <li  class="small"><a href="tel:+6591766832">+65 9176 6832</a></li>
+                </ul>                
+            </div>
+            <div class="col-md-5">
+                <div class="floating-div bg-clr-red p-all-2">
                     <ul class="list-unstyled">
-                        <li><h1 class="clr-yellow">Get in Touch</h1></li>
-                        <li>Singapore</li>
-                        <li><a href="mailto:hello@whyena.com">hello@whyena.com</a></li>
-                        <li><a href="tel:+6591766832">+65 9176 6832</a></li>
+                        <li><h2 class="x-small text-uppercase">Send us a message</h2></li>
+                        <li class="m-top-2"><input type="text" placeholder="Full Name" name="full-name"></li>
+                        <li><input type="text" placeholder="Subject" name="subject"></li>
+                        <li><textarea class="message" placeholder="Message" name="message"></textarea></li>
+                        <li><br /><a class="text-uppercase btn-whyena bg-clr-white m-top-2" id="send-message" href="#">Send Message</a></li>
                     </ul>
                 </div>
             </div>
         </div> 
-        <div class="row m-0 text-center p-top-btm" id="subscribe">            
-            <div class="col-md-12 p-0">
-               <!-- Begin Mailchimp Signup Form -->
-                <div id="mc_embed_signup">
-                    <form action="https://whyena.us18.list-manage.com/subscribe/post?u=12c7ae0f54afb1cfb0288cf01&amp;id=2eeb809d19" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        <div id="mc_embed_signup_scroll">
-                    <div class="mc-field-group">
-                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                    </div>
-                        <div id="mce-responses" class="clear">
-                            <div class="response" id="mce-error-response" style="display:none"></div>
-                            <div class="response" id="mce-success-response" style="display:none"></div>
-                        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_12c7ae0f54afb1cfb0288cf01_2eeb809d19" tabindex="-1" value=""></div><br />
-                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-yellow"></div>
-                        </div>
-                    </form>
-                    </div>
-                    
-                    <!--End mc_embed_signup-->
-            </div>
-        </div>
-        <div class="row m-0 text-center" id="team">
-            <div class="col-12">
-                <p>
-                    &copy; Whyena 2020
-                </p>
+
+        <div class="row m-0 p-btm-7 bg-clr-red">
+            <div class="offset-md-1 col-10 m-top-2">
+
+                <h2 class="small text-uppercase">Whyena</h2>
+                <p class="x-small">&copy;<span class="this-year">2020</span></p>
+       
+                <ul class="list-inline medium" id="social">
+                    <li class="list-inline-item"><a href="https://www.facebook.com/whyenasocial/" class="typcn typcn-social-facebook-circular"></a></li>
+                    <li class="list-inline-item"><a href="https://www.instagram.com/_whyena/" class="typcn typcn-social-instagram-circular"></a></li>
+                    <li class="list-inline-item"><a href="https://www.youtube.com/channel/UCjSl5cA-DLlQGFaX4YaJuIg" class="typcn typcn-social-youtube-circular"></a></li>
+                </ul>
+           
             </div>
             
         </div>
@@ -227,6 +277,8 @@
     </div>
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="   crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
