@@ -1,18 +1,55 @@
 html {
     scroll-behavior: smooth;
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-family: 'Biryani',  Helvetica, Arial,sans-serif;
 }
 
 a, a:hover, a:active {
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    color:#555;
+    font-family: 'Biryani',  Helvetica, Arial,sans-serif;
+    color:#000;
 }
 
 
 h1, h2, h3, h4 {
-    font-family:'Oswald';
+    font-family:'Rubik',  Helvetica, Arial,sans-serif;
     font-weight: 700;
-    text-transform: uppercase;
+}
+
+.m-top-2 {
+    margin-top:2rem;
+}
+
+.p-side-6 {
+    padding-left:6rem !important;
+    padding-right:6rem !important;
+}
+
+.row.p-top-7 {
+    padding-top:7rem;
+}
+
+.row.p-btm-7 {
+    padding-bottom:7rem;
+}
+
+
+.huge {
+    font-size:4rem;
+}
+
+.medium {
+    font-size:3rem;
+}
+
+.small {
+    font-size:1.5rem;
+}
+
+.x-small {
+    font-size:1.2rem;
+}
+
+.max-width-100 {
+    max-width:100%;
 }
 
 .overlay-menu {
@@ -81,6 +118,27 @@ h1, h2, h3, h4 {
     transform: rotate(45deg) translate(-8px, -8px);
   }
 
+  .top-nav {
+    height:7rem;
+    padding:1.5rem 0;
+    position:fixed;
+    top:0;
+    left:0;
+    background:#fff;
+    z-index:9999;
+    width:100%;
+  }
+
+  .menu-nav {
+    font-size:1rem;
+    margin:1rem 0;
+    text-transform:uppercase;
+  }
+
+  #logo {
+    height:4rem;
+  }
+
 .clr-yellow {
     color:#FFC03A;
 }
@@ -89,13 +147,20 @@ h1, h2, h3, h4 {
     background-color:#f3f3f3;
 }
 
-.btn-yellow {
-    background-color:rgba(255, 192, 58, 1);
+.bg-clr-dark-grey {
+    background-color: #808080;
+    color:#fff;
 }
 
-img {
-    max-width:100%;
+.bg-clr-yellow {
+    background-color:#FFC03A;
 }
+
+.btn-yellow {    
+    padding:1rem 2rem;
+    color:#fff;
+}
+
 
 .center-div {
     margin:auto;
@@ -107,20 +172,28 @@ img {
     height:500px;
 }
 
+#hiw div div.row ul{
+    border: 4px solid #FFC03A;
+}
+
 #hiw div div.row ul>li:first-child {
     width:auto;
-    height:250px;
+    height:20rem;
     overflow:hidden;
     font-weight: 700;
 }
 
 #hiw div div.row ul>li:nth-child(2) {
-    height:120px;
+    height:8rem;
     padding:20px 10px;
-    background-color:#f3f3f3;
+    text-transform:uppercase;
+    
+}
+#hiw div div.row ul>li:nth-child(2) h2 {
+    font-weight:300;
 }
 
-.ask, .answer, .trending {
+.support, .connect, .productive, .fun {
     text-transform:uppercase;
     text-align:center;
     background-position: left top;
@@ -129,14 +202,17 @@ img {
     color:white;
 }
 
-.ask {
-    background-image: url('../img/ask.jpg')
+.support {
+    background-image: url('../img/support.png')
 }
-.answer {
-    background-image: url('../img/answer.jpg')
+.connect {
+    background-image: url('../img/connect.png')
 }
-.trending {
-    background-image: url('../img/trending.jpg')
+.productive {
+    background-image: url('../img/productive.png')
+}
+.fun {
+    background-image: url('../img/fun.png')
 }
 
 .email, #mc-embedded-subscribe {
@@ -153,12 +229,21 @@ img {
 
 
 
-.row.p-top-btm {
-    padding:2em 0;
+.border-red {
+    border:4px solid red;
 }
 
 @media only screen and (max-width: 768px) {
   
+    .p-side-6 {
+        padding-left:1rem !important;
+        padding-right:1rem !important;
+    }
+
+    .top-nav {
+        display:none;
+    }
+
     .banner-div {
         overflow:hidden;
         height:180px;
@@ -186,7 +271,18 @@ img {
     }
 
     #hiw div div.row ul>li:first-child {
-        height:120px;
+        height:15rem;
         
+        
+    }
+
+    .support, .connect, .productive, .fun {
+        background-position: center;
+        background-size:auto 100%;
+        
+    }
+
+    .row.p-top-7 {
+        padding-top:80px;
     }
   }
