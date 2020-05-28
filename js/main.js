@@ -99,5 +99,9 @@ $(document).ready(function(){
     $('.carousel').carousel();
 
     $('.this-year').text(new Date().getFullYear());
+
+    window.scroll();
+
+    
     
 });
